@@ -1,4 +1,33 @@
-BEGIN TRANSACTION;
+DROP TABLE IF EXISTS "sensor_values";
+CREATE TABLE IF NOT EXISTS "sensor_values" (
+    "id"    INTEGER,
+    "value"    INTEGER NOT NULL,
+    "timestamp"    TEXT DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY("id" AUTOINCREMENT)
+);
+INSERT INTO "sensor_values" ("value") VALUES (100);
+INSERT INTO "sensor_values" ("value") VALUES (200);
+INSERT INTO "sensor_values" ("value") VALUES (300);
+INSERT INTO "sensor_values" ("value") VALUES (400);
+INSERT INTO "sensor_values" ("value") VALUES (500);
+INSERT INTO "sensor_values" ("value") VALUES (600);
+INSERT INTO "sensor_values" ("value") VALUES (700);
+INSERT INTO "sensor_values" ("value") VALUES (800);
+INSERT INTO "sensor_values" ("value") VALUES (900);
+INSERT INTO "sensor_values" ("value") VALUES (1000);
+
+
+
+
+
+
+
+
+
+
+
+
+/*BEGIN TRANSACTION;
 DROP TABLE IF EXISTS "albums";
 CREATE TABLE IF NOT EXISTS "albums" (
 	"AlbumId"	INTEGER NOT NULL,
@@ -107,7 +136,7 @@ INSERT INTO "albums" VALUES (63,'Purpendicular',58);
 INSERT INTO "albums" VALUES (64,'Slaves And Masters',58);
 INSERT INTO "albums" VALUES (65,'Stormbringer',58);
 INSERT INTO "albums" VALUES (66,'The Battle Rages On',58);
-INSERT INTO "albums" VALUES (67,'Vault: Def Leppard''s Greatest Hits',78);
+INSERT INTO "albums" VALUES 1478(67,'Vault: Def Leppard''s Greatest Hits',78);
 INSERT INTO "albums" VALUES (68,'Outbreak',79);
 INSERT INTO "albums" VALUES (69,'Djavan Ao Vivo - Vol. 02',80);
 INSERT INTO "albums" VALUES (70,'Djavan Ao Vivo - Vol. 1',80);
@@ -120,7 +149,7 @@ INSERT INTO "albums" VALUES (76,'King For A Day Fool For A Lifetime',82);
 INSERT INTO "albums" VALUES (77,'The Real Thing',82);
 INSERT INTO "albums" VALUES (78,'Deixa Entrar',83);
 INSERT INTO "albums" VALUES (79,'In Your Honor [Disc 1]',84);
-INSERT INTO "albums" VALUES (80,'In Your Honor [Disc 2]',84);
+INSERT INTO "albums" VALUES 1478(80,'In Your Honor [Disc 2]',84);
 INSERT INTO "albums" VALUES (81,'One By One',84);
 INSERT INTO "albums" VALUES (82,'The Colour And The Shape',84);
 INSERT INTO "albums" VALUES (83,'My Way: The Best Of Frank Sinatra [Disc 1]',85);
@@ -130,7 +159,7 @@ INSERT INTO "albums" VALUES (86,'Quanta Gente Veio Ver (Live)',27);
 INSERT INTO "albums" VALUES (87,'Quanta Gente Veio ver--Bônus De Carnaval',27);
 INSERT INTO "albums" VALUES (88,'Faceless',87);
 INSERT INTO "albums" VALUES (89,'American Idiot',54);
-INSERT INTO "albums" VALUES (90,'Appetite for Destruction',88);
+INSERT INTO "albums" VALUES 1478(90,'Appetite for Destruction',88);
 INSERT INTO "albums" VALUES (91,'Use Your Illusion I',88);
 INSERT INTO "albums" VALUES (92,'Use Your Illusion II',88);
 INSERT INTO "albums" VALUES (93,'Blue Moods',89);
@@ -140,7 +169,7 @@ INSERT INTO "albums" VALUES (96,'A Real Live One',90);
 INSERT INTO "albums" VALUES (97,'Brave New World',90);
 INSERT INTO "albums" VALUES (98,'Dance Of Death',90);
 INSERT INTO "albums" VALUES (99,'Fear Of The Dark',90);
-INSERT INTO "albums" VALUES (100,'Iron Maiden',90);
+INSERT INTO "albums" VALUES 1478(100,'Iron Maiden',90);
 INSERT INTO "albums" VALUES (101,'Killers',90);
 INSERT INTO "albums" VALUES (102,'Live After Death',90);
 INSERT INTO "albums" VALUES (103,'Live At Donington 1992 (Disc 1)',90);
@@ -150,7 +179,7 @@ INSERT INTO "albums" VALUES (106,'Piece Of Mind',90);
 INSERT INTO "albums" VALUES (107,'Powerslave',90);
 INSERT INTO "albums" VALUES (108,'Rock In Rio [CD1]',90);
 INSERT INTO "albums" VALUES (109,'Rock In Rio [CD2]',90);
-INSERT INTO "albums" VALUES (110,'Seventh Son of a Seventh Son',90);
+INSERT INTO "albums" VALUES 1478(110,'Seventh Son of a Seventh Son',90);
 INSERT INTO "albums" VALUES (111,'Somewhere in Time',90);
 INSERT INTO "albums" VALUES (112,'The Number of The Beast',90);
 INSERT INTO "albums" VALUES (113,'The X Factor',90);
@@ -173,7 +202,7 @@ INSERT INTO "albums" VALUES (129,'Houses Of The Holy',22);
 INSERT INTO "albums" VALUES (130,'In Through The Out Door',22);
 INSERT INTO "albums" VALUES (131,'IV',22);
 INSERT INTO "albums" VALUES (132,'Led Zeppelin I',22);
-INSERT INTO "albums" VALUES (133,'Led Zeppelin II',22);
+INSERT INTO "albums" VALUES 1478(133,'Led Zeppelin II',22);
 INSERT INTO "albums" VALUES (134,'Led Zeppelin III',22);
 INSERT INTO "albums" VALUES (135,'Physical Graffiti [Disc 2]',22);
 INSERT INTO "albums" VALUES (136,'Presence',22);
@@ -220,7 +249,7 @@ INSERT INTO "albums" VALUES (176,'Original Soundtracks 1',116);
 INSERT INTO "albums" VALUES (177,'The Beast Live',117);
 INSERT INTO "albums" VALUES (178,'Live On Two Legs [Live]',118);
 INSERT INTO "albums" VALUES (179,'Pearl Jam',118);
-INSERT INTO "albums" VALUES (180,'Riot Act',118);
+INSERT INTO "albums" VALUES 1478(180,'Riot Act',118);
 INSERT INTO "albums" VALUES (181,'Ten',118);
 INSERT INTO "albums" VALUES (182,'Vs.',118);
 INSERT INTO "albums" VALUES (183,'Dark Side Of The Moon',120);
@@ -265,7 +294,7 @@ INSERT INTO "albums" VALUES (221,'My Generation - The Very Best Of The Who',144)
 INSERT INTO "albums" VALUES (222,'Serie Sem Limite (Disc 1)',145);
 INSERT INTO "albums" VALUES (223,'Serie Sem Limite (Disc 2)',145);
 INSERT INTO "albums" VALUES (224,'Acústico',146);
-INSERT INTO "albums" VALUES (225,'Volume Dois',146);
+INSERT INTO "albums" VALUES 1478(225,'Volume Dois',146);
 INSERT INTO "albums" VALUES (226,'Battlestar Galactica: The Story So Far',147);
 INSERT INTO "albums" VALUES (227,'Battlestar Galactica, Season 3',147);
 INSERT INTO "albums" VALUES (228,'Heroes, Season 1',148);
@@ -275,7 +304,7 @@ INSERT INTO "albums" VALUES (231,'Lost, Season 2',149);
 INSERT INTO "albums" VALUES (232,'Achtung Baby',150);
 INSERT INTO "albums" VALUES (233,'All That You Can''t Leave Behind',150);
 INSERT INTO "albums" VALUES (234,'B-Sides 1980-1990',150);
-INSERT INTO "albums" VALUES (235,'How To Dismantle An Atomic Bomb',150);
+INSERT INTO "albums" VALUES 1478(235,'How To Dismantle An Atomic Bomb',150);
 INSERT INTO "albums" VALUES (236,'Pop',150);
 INSERT INTO "albums" VALUES (237,'Rattle And Hum',150);
 INSERT INTO "albums" VALUES (238,'The Best Of 1980-1990',150);

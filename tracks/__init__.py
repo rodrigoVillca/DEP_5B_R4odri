@@ -2,6 +2,8 @@ import os
 
 from flask import Flask
 
+from . import valores
+
 
 def create_app(test_config=None):
     # create and configure the app
@@ -25,15 +27,15 @@ def create_app(test_config=None):
         pass
 
     # genere enlace de ruta para mostrar mensaje.
-    @app.route('/hola')
+    @app.route('/')
     def hello():
         return 'Hola, mundo!'
     #importo desde el archivo db la base de datos.
-    from . import db, genre, tracks, album, artists
+    from . import db, genre, album, artists,valores
     db.init_app(app)
-    app.register_blueprint(genre.bp)
-    app.register_blueprint(tracks.bp)
-    app.register_blueprint(album.bp)
-    app.register_blueprint(artists.bp)
+#    app.register_blueprint(genre.bp)
+    app.register_blueprint(valores.bp)
+#    app.register_blueprint(album.bp)
+#    app.register_blueprint(artists.bp)
 
     return app

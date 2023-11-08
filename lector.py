@@ -28,7 +28,9 @@ except KeyboardInterrupt:
     db.close()
     ser.close()
     
-
+# cosas para la presentacionmostrar que sensa y la intervencion esa seria la presentacion osea
+#  basicamente mostrar para que
+# sirve y explicar lo que haciendo 
 
 
 
